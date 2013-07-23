@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  city: MyString
+  state: MyString
+  country: MyString
+  cep: MyString
+  neighborhood: MyString
+  street: MyString
+  number: MyString
+  complement: MyString
+
+two:
+  city: MyString
+  state: MyString
+  country: MyString
+  cep: MyString
+  neighborhood: MyString
+  street: MyString
+  number: MyString
+  complement: MyString

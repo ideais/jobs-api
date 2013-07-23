@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  [: MyString
+  institution: MyString
+  begin: 2013-07-19
+  end: 2013-07-19
+  course: MyString
+  ]: MyString
+
+two:
+  [: MyString
+  institution: MyString
+  begin: 2013-07-19
+  end: 2013-07-19
+  course: MyString
+  ]: MyString
