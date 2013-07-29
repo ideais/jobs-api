@@ -2,6 +2,7 @@ class InscriptionsController < ApplicationController
   require 'json'
   respond_to :html, :json, :xml
   skip_before_filter :verify_authenticity_token
+  http_basic_authenticate_with name: "ideais", password: "ideais", :only => :show
 
   def show
     @inscriptions = Inscription.all
