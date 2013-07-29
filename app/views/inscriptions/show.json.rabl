@@ -3,7 +3,7 @@ attributes :name, :email, :linkedin_url, :github, :facebook, :twitter, :about
 child :jobs, :object_root => false do
   attributes :begin, :end, :company, :title
 end
-child :educations :object_root => false do
+child :educations, :object_root => false do
   attributes :begin, :end, :school, :degree
 end
 child :address, :object_root => false do
