@@ -56,7 +56,7 @@ Jobs::Application.routes.draw do
 
   get 'educations' => 'educations#show'
   get 'jobs' => 'jobs#show'
-  get 'inscriptions' => 'inscriptions#show'
-  post 'inscriptions' => 'inscriptions#add'
+  get 'submissions' => 'inscriptions#show', defaults: {format: :json}
+  post 'submissions' => 'inscriptions#add'
 
 end

@@ -12,19 +12,23 @@ class InscriptionsController < ApplicationController
     end
   end
 
+  def error
+
+  end
+
   def add
 
     hash = JSON.parse params[:json]
 
-    inscription = Inscription.new
+    @inscription = Inscription.new
 
-    inscription.email = hash['email']
-    inscription.name = hash['name']
-    inscription.linkedin_url = hash['linkedin_url']
-    inscription.github = hash['github']
-    inscription.facebook = hash['facebook']
-    inscription.twitter = hash['twitter']
-    inscription.about = hash['about']
+    @inscription.email = hash['email']
+    @inscription.name = hash['name']
+    @inscription.linkedin_url = hash['linkedin_url']
+    @inscription.github = hash['github']
+    @inscription.facebook = hash['facebook']
+    @inscription.twitter = hash['twitter']
+    @inscription.about = hash['about']
 
     hash['jobs'].each do |j|
 
@@ -35,7 +39,7 @@ class InscriptionsController < ApplicationController
       job.end = j['end']
       job.title = j['title']
 
-      inscription.jobs << job
+      @inscription.jobs << job
 
     end
 
@@ -48,7 +52,7 @@ class InscriptionsController < ApplicationController
       education.end = e['end']
       education.degree = e['degree']
 
-      inscription.educations << education
+      @inscription.educations << education
 
     end
 
@@ -63,15 +67,15 @@ class InscriptionsController < ApplicationController
     address.number = hash['address']['number']
     address.complement = hash['address']['complement']
 
-    inscription.address = address
+    @inscription.address = address
 
-    if inscription.save
+    if @inscription.save
 
-      flash[:message] = "funcionou"
+      render :text => " "
 
     else
 
-      flash[:message] = "não funcionou"
+      render :action => :error
 
     end
   end

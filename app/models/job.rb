@@ -2,7 +2,7 @@ class MyValidator < ActiveModel::Validator
 
   def validate(record)
     if record.end? && record.begin > record.end
-      record.errors[:base] << "Begin should be lower than end"
+      record.errors.add(:base, "Begin should be lower than end")
     end
   end
 end
