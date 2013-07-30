@@ -1,22 +1,28 @@
 Jobs-API
 ==========
 
+
 ## Métodos
+
 
 ### Lista de Inscritos
 
+
 URL: http://ideais-jobs-api.herokuapp.com/submissions
-Request Type: GET
-Login: ideais
-Senha: ideais
+
+* Request Type: GET
+* Login: ideais
+* Senha: ideais
 
 ### Inscrição
 
-URL: http://ideais-jobs-api.herokuapp.com/submissions
-Request Type: POST
-Parametro: json
+
+* URL: http://ideais-jobs-api.herokuapp.com/submissions
+* Request Type: POST
+* Parâmetro: json
 
 #### Exemplo do JSON
+
 
 ``` json
   {
@@ -67,6 +73,24 @@ Parametro: json
     }
 }
 ```
+
+##### Validações: 
+* email: Presença obrigatoria, validação no formato
+* name: Presença obrigatoria
+* about: Presença obrigatoria
+* education:
+  * begin: Presença obrigatoria, deve ser menor que end, deve estar no formato yyyy-mm-dd
+  * end: Presença obrigatoria, deve estar no formato yyyy-mm-dd
+  * school: Presença obrigatoria
+  * degree: Presença obrigatoria
+* jobs:
+  * begin: Presença obrigatoria, deve ser menor que end, deve estar no formato yyyy-mm-dd
+  * end: Deve estar no formato yyyy-mm-dd
+  * company: Presença obrigatoria
+  * title: Presença obrigatoria
+
+
+
 
 
 
