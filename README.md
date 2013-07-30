@@ -75,19 +75,19 @@ URL: http://ideais-jobs-api.herokuapp.com/submissions
 ```
 
 ##### Validações: 
-* email: Presença obrigatoria, validação no formato
-* name: Presença obrigatoria
-* about: Presença obrigatoria
+* email: Presença obrigatória, validação no formato
+* name: Presença obrigatória
+* about: Presença obrigatória
 * education:
-  * begin: Presença obrigatoria, deve ser menor que end, deve estar no formato yyyy-mm-dd
-  * end: Presença obrigatoria, deve estar no formato yyyy-mm-dd
-  * school: Presença obrigatoria
-  * degree: Presença obrigatoria
+  * begin: Presença obrigatória, deve ser menor que end, deve estar no formato yyyy-mm-dd
+  * end: Presença obrigatória, deve estar no formato yyyy-mm-dd
+  * school: Presença obrigatória
+  * degree: Presença obrigatória
 * jobs:
-  * begin: Presença obrigatoria, deve ser menor que end, deve estar no formato yyyy-mm-dd
+  * begin: Presença obrigatória, deve ser menor que end, deve estar no formato yyyy-mm-dd
   * end: Deve estar no formato yyyy-mm-dd
-  * company: Presença obrigatoria
-  * title: Presença obrigatoria
+  * company: Presença obrigatória
+  * title: Presença obrigatória
 
 
 
